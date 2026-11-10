@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm gallery palette — ivory ground, ink text, terracotta accent (from the studio logo) */
+  --color-ivory: #faf7f1;
+  --color-cream: #f3ede1;
+  --color-sand: #ece3d1;
+  --color-sand-dark: #ddd0b8;
+  --color-ink: #211b15;
+  --color-ink-soft: #453c31;
+  --color-stone-warm: #6f6455;
+  --color-line: #d9cdb6;
+  --color-clay: #c14e24;
+  --color-clay-dark: #9a3a17;
+  --color-clay-light: #e86a33;
+  --color-night: #171310;
+
+  --font-display: var(--font-spectral), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-clay);
+  color: #fff;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Editorial kicker used above section titles */
+.kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-clay);
+}
+
+/* Thin rule with a clay tick — Afriart-style section divider */
+.rule-clay {
+  height: 1px;
+  background: var(--color-line);
+  position: relative;
+}
+.rule-clay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 56px;
+  height: 3px;
+  background: var(--color-clay);
+}
+
+/* Slow, soft Ken Burns drift on the hero image */
+@keyframes hero-drift {
+  from {
+    transform: scale(1.06) translateY(0);
+  }
+  to {
+    transform: scale(1.14) translateY(-1.5%);
+  }
+}
+.hero-drift {
+  animation: hero-drift 24s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-drift {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Indeterminate fundraising bar shimmer (no invented raised amount) */
+@keyframes bar-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+.bar-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    var(--color-clay) 40%,
+    var(--color-clay-light) 50%,
+    var(--color-clay) 60%
+  );
+  background-size: 200% 100%;
+  animation: bar-shimmer 2.8s linear infinite;
+}
+
+/* Lightbox fade-in */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 0.25s ease-out both;
+}
