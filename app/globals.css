@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Warm gallery palette — ivory ground, ink text, terracotta accent (from the studio logo) */
-  --color-ivory: #faf7f1;
-  --color-cream: #f3ede1;
-  --color-sand: #ece3d1;
-  --color-sand-dark: #ddd0b8;
+  /* Clean gallery palette — white ground, ink text, terracotta accent (from the studio logo) */
+  --color-ivory: #ffffff;
+  --color-cream: #ffffff;
+  --color-sand: #f2f2f0;
+  --color-sand-dark: #e0e0dc;
   --color-ink: #211b15;
   --color-ink-soft: #453c31;
   --color-stone-warm: #6f6455;
-  --color-line: #d9cdb6;
+  --color-line: #e5e5e2;
   --color-clay: #c14e24;
   --color-clay-dark: #9a3a17;
   --color-clay-light: #e86a33;
