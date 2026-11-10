@@ -48,11 +48,9 @@ export default function IyaraKaraboPage() {
               intro={MEET_ARTISTS_INTRO}
             />
             <p className="mt-6 text-base leading-relaxed text-ink-soft sm:text-lg">
-              Iyara Karabo is one of the current artists in Metamorphosis, the
-              studio&apos;s year-long apprentice program. Through the program,
-              artists receive skill-based grants and commissions, take part in
-              exhibitions and events, and build the professional networks that
-              carry their practice forward.
+              Iyara Karabo is a current Metamorphosis artist — grants,
+              commissions, exhibitions, events, and the network behind
+              their practice.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -80,6 +78,11 @@ export default function IyaraKaraboPage() {
                   src: "/images/iyara-whatsapp.jpg",
                   alt: "Iyara Karabo at Kiggundu Art Studio",
                   caption: "Iyara Karabo",
+                },
+                {
+                  src: "/images/metamorphosis-talk-72.jpg",
+                  alt: "Visitors looking at a framed portrait during an artist talk",
+                  caption: "Visitors at the artist talk",
                 },
                 {
                   src: "/images/metamorphosis-talk-94.jpg",

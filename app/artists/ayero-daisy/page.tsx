@@ -48,11 +48,9 @@ export default function AyeroDaisyPage() {
               intro={MEET_ARTISTS_INTRO}
             />
             <p className="mt-6 text-base leading-relaxed text-ink-soft sm:text-lg">
-              Ayero Daisy is one of the current artists in Metamorphosis, the
-              studio&apos;s year-long apprentice program. Through the program,
-              artists receive skill-based grants and commissions, take part in
-              exhibitions and events, and build the professional networks that
-              carry their practice forward.
+              Ayero Daisy is a current Metamorphosis artist — grants,
+              commissions, exhibitions, events, and the network behind
+              their practice.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -80,6 +78,11 @@ export default function AyeroDaisyPage() {
                   src: "/images/ayero-artwork.jpg",
                   alt: "Artwork by Ayero Daisy",
                   caption: "Work by Ayero Daisy",
+                },
+                {
+                  src: "/images/img-7494.jpg",
+                  alt: "Two artists working together on a red board",
+                  caption: "Artists at work",
                 },
                 {
                   src: "/images/ayero-8734.jpg",

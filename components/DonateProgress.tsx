@@ -51,7 +51,7 @@ export default function DonateProgress({ dark = false }: { dark?: boolean }) {
 
       <p className={`mt-4 text-sm leading-relaxed ${dark ? "text-white/75" : "text-ink-soft"}`}>
         {pct === null
-          ? "The total raised so far is published on the campaign page — this bar shows the campaign is live."
+          ? "            The live total is on the campaign page — this bar shows the campaign is live."
           : "Thank you to everyone who has given so far."}
       </p>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import DonateProgress from "@/components/DonateProgress";
 import { CAMPAIGN, DONATION_USES, SITE } from "@/lib/data";
@@ -6,7 +7,7 @@ import { CAMPAIGN, DONATION_USES, SITE } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Donate",
   description:
-    "Support Kiggundu Art Studio — help us raise $12,000 for the 2026 Residency & Wellness Program: stipends for 11 resident artists, art materials and wellness activities.",
+    "Support Kiggundu Art Studio — help raise $12,000 for the 2026 Residency & Wellness Program: stipends for 11 resident artists, materials and wellness.",
 };
 
 export default function DonatePage() {
@@ -37,9 +38,9 @@ export default function DonatePage() {
               title="Fund an apprenticeship, workshop materials, community gatherings"
             />
             <p className="mt-6 text-base leading-relaxed text-ink-soft sm:text-lg">
-              Your gift goes directly to the 2026 Residency &amp; Wellness
-              Program — stipends for all our 11 resident artists, art
-              materials, wellness activities, and more.
+              Your gift funds the 2026 Residency &amp; Wellness
+              Program — stipends for 11 resident artists, materials,
+              wellness, and more.
             </p>
             <div className="mt-10">
               <DonateProgress />
@@ -47,7 +48,20 @@ export default function DonatePage() {
           </div>
 
           <div>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.24em] text-stone-warm">
+            <figure>
+              <Image
+                src={CAMPAIGN.image}
+                alt={CAMPAIGN.imageAlt}
+                width={1600}
+                height={1205}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <figcaption className="mt-3 text-sm text-stone-warm">
+                Community at the studio — one of the things your gift supports.
+              </figcaption>
+            </figure>
+            <h2 className="mt-10 text-xs font-semibold uppercase tracking-[0.24em] text-stone-warm">
               What a donation supports
             </h2>
             <ul className="mt-5 space-y-px border border-line bg-line">
@@ -61,8 +75,8 @@ export default function DonatePage() {
             <div className="mt-10 rounded-lg bg-cream p-8">
               <h3 className="font-display text-2xl font-medium">Give another way</h3>
               <p className="mt-3 text-base leading-relaxed text-ink-soft">
-                Prefer to talk first, or to give materials, time or space?
-                Write to the studio — every form of support matters.
+                Prefer to talk first, or give materials, time or space?
+                Write to us — every form of support matters.
               </p>
               <p className="mt-5 text-base">
                 <a

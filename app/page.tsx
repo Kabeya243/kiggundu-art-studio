@@ -241,7 +241,7 @@ export default function Home() {
         <SectionHeading
           kicker="In Pictures"
           title="Inside the studio"
-          intro="Open studios, artist talks, portraits and works — a look at the life of the space. Tap any image to view it larger."
+          intro="Open studios, talks, portraits and works — the life of the space. Tap any image to enlarge it."
         />
         <div className="mt-10">
           <GalleryLightbox images={GALLERY_IMAGES} />
@@ -316,7 +316,7 @@ export default function Home() {
         <SectionHeading
           kicker="Programs"
           title="What the studio does"
-          intro="Four ways the studio works with artists and with its neighbourhood — from a full year of apprenticeship to an evening around the fire."
+          intro="Four ways we work with artists and neighbours — from a year of apprenticeship to an evening by the fire."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {PROGRAMS.map((p, i) => (
@@ -529,7 +529,7 @@ export default function Home() {
             <SectionHeading
               kicker="Visit"
               title="Drop by the studio"
-              intro="Ndejje Kanyanya, Wakiso — minutes from Kampala. Come for a show, a workshop, or simply to see the work being made."
+              intro="Ndejje Kanyanya, Wakiso — minutes from Kampala. Come for a show, a workshop, or to see the work being made."
             />
             <div className="mt-8 flex flex-wrap gap-3">
               <a

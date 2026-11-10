@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
-import { COLLABORATORS, FOUNDER, OUR_STORY, SITE, STATS } from "@/lib/data";
+import { ABOUT_IMAGE, COLLABORATORS, FOUNDER, OUR_STORY, SITE, STATS } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Kiggundu Art Studio is a non-profit founded in 2021 in Ndejje Kanyanya, Wakiso — a vibrant creative hub for emerging artists in Uganda.",
+    "Non-profit founded in 2021 in Ndejje Kanyanya, Wakiso — a creative hub for emerging artists in Uganda.",
 };
 
 export default function AboutPage() {
@@ -45,9 +45,8 @@ export default function AboutPage() {
               </p>
             ))}
             <p className="mt-6 border-l-2 border-clay pl-5 font-display text-xl italic leading-relaxed text-ink">
-              “We are a vibrant creative hub for emerging artists in Uganda. Our
-              studio is a safe place where artists can pour their hearts and
-              ideas into their work.”
+              “A vibrant creative hub for emerging artists — a safe place to
+              pour heart and ideas into the work.”
             </p>
           </div>
           <div>
@@ -97,6 +96,20 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-5 pb-20 sm:px-8 sm:pb-28">
+        <figure>
+          <Image
+            src={ABOUT_IMAGE.src}
+            alt={ABOUT_IMAGE.alt}
+            width={1600}
+            height={1200}
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="aspect-[16/10] w-full object-cover"
+          />
+          <figcaption className="mt-3 text-sm text-stone-warm">{ABOUT_IMAGE.caption}</figcaption>
+        </figure>
+      </section>
+
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
         <SectionHeading
           kicker="Collaborations"
@@ -110,8 +123,8 @@ export default function AboutPage() {
           ))}
         </ul>
         <p className="mt-10 max-w-2xl text-base leading-relaxed text-ink-soft">
-          Founded in 2021 in Ndejje Kanyanya, Wakiso District. A springboard
-          for early-career artists — and a bridge between art and social good.
+          Founded in 2021 in Ndejje Kanyanya. A springboard
+          for early-career artists — a bridge between art and social good.
         </p>
       </section>
     </>

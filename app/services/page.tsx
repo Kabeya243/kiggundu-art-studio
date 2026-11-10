@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import { SERVICES, SITE } from "@/lib/data";
 
@@ -25,19 +26,32 @@ export default function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
-        <div className="grid gap-px bg-line sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2">
           {SERVICES.map((s, i) => (
-            <article key={s.name} className="bg-ivory p-8 sm:p-10">
-              <p className="text-sm font-bold text-clay">0{i + 1}</p>
-              <h2 className="mt-3 font-display text-3xl font-medium leading-tight">
-                {s.name}
-              </h2>
-              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-clay">
-                {s.description}
-              </p>
-              <p className="mt-4 max-w-md text-base leading-relaxed text-ink-soft">
-                {s.detail}
-              </p>
+            <article key={s.name} className="group flex flex-col bg-ivory">
+              <div className="relative overflow-hidden">
+                <span className="relative block aspect-[3/2] w-full">
+                  <Image
+                    src={s.image}
+                    alt={s.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  />
+                </span>
+              </div>
+              <div className="flex flex-1 flex-col p-8 sm:p-10">
+                <p className="text-sm font-bold text-clay">0{i + 1}</p>
+                <h2 className="mt-3 font-display text-3xl font-medium leading-tight">
+                  {s.name}
+                </h2>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-clay">
+                  {s.description}
+                </p>
+                <p className="mt-4 max-w-md text-base leading-relaxed text-ink-soft">
+                  {s.detail}
+                </p>
+              </div>
             </article>
           ))}
         </div>
@@ -48,8 +62,8 @@ export default function ServicesPage() {
             title="Tell us what you have in mind"
           />
           <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-soft">
-            For a mural, a workshop or a tour, write to the studio or call —
-            we will plan it with you.
+            For a mural, workshop or tour, write or call — we&apos;ll plan it
+            with you.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

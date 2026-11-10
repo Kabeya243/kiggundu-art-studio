@@ -36,8 +36,8 @@ SEO: metadata + Open Graph in `app/layout.tsx`, `app/sitemap.ts`,
 Never use the images from the studio's Drive theme folder
 (`image-01.jpg` … `image-08.jpg`) — the owner forbade it.
 
-`public/images/` contains (all downloaded from the live site, compressed /
-resized with PIL — the two 11–15 MB portraits were reduced to max 1600 px):
+`public/images/` contains 20 files (all downloaded from the live site,
+compressed / resized with sharp — max 1600 px, quality 80):
 
 - `logo.png` — studio logo, converted from the live `logo.avif` (AVIF not
   readable by PIL; converted with sharp)
@@ -47,6 +47,18 @@ resized with PIL — the two 11–15 MB portraits were reduced to max 1600 px):
 - `iyara-9123.jpg`, `iyara-whatsapp.jpg` — Iyara Karabo
 - `ayero-8732.jpg`, `ayero-8734.jpg`, `ayero-artwork.jpg` — Ayero Daisy
 - `chronicles-poster.jpg`, `chronicles-3673.jpg` — Chronicles of Existence
+- Added 10 Nov 2026 (second set, same source): `metamorphosis-talk-72.jpg`,
+  `metamorphosis-talk-94b.jpg` — artist talks; `open-studio-7th-106.jpg` —
+  artists at the open studio; `pxl-121855-mp.jpg` — learning around a table;
+  `pxl-135025-mp.jpg` — sharing a meal; `epeyonon-exhibition-1.jpg` and
+  `epeyonon-exhibition-2.jpg` — Epeyonon exhibition opening (identical files
+  on the live site; each used once, on a different page); `img-7494.jpg` —
+  two artists at work (small source, 295×255, used at tile size only).
+
+Texts were shortened on 10 Nov 2026 (about half the length, same facts and
+messages) and the site is image-led: 12-image home gallery, photos on every
+program, service, event, press and donate section, and on artist profiles.
+Background is white (ivory/cream = #ffffff).
 
 Three live images could **not** be downloaded (their URLs return a
 WordPress.com error page) and are not used anywhere: the featured image of

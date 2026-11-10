@@ -6,18 +6,26 @@
  * descriptions, press items) come from the studio's own WordPress theme,
  * used only where the live site is silent — never to replace live content.
  *
- * Images: ONLY files downloaded from the live site, in /public/images/.
- * Three live images could not be downloaded (their URLs return a
- * WordPress.com error page) and are not used anywhere:
- * the "Benefits of Experiential Learning" featured image,
- * "pxl_20250405" and the "suicide flowers" image.
+ * Images: ONLY files downloaded from the live site, in /public/images/
+ * (20 files: 12 first set + 8 added 10 Nov 2026). Three live images could
+ * not be downloaded (their URLs return a WordPress.com error page) and are
+ * not used anywhere: the "Benefits of Experiential Learning" featured image,
+ * "pxl_20250405" and the "suicide flowers" image. The two "Benefits" and
+ * "Changing the Narrative" articles therefore show real studio photos
+ * (learning session / artists together) instead of their missing featured
+ * images — the captions say so honestly.
+ * Note: epeyonon-exhibition-1.jpg and epeyonon-exhibition-2.jpg are the
+ * same photo (identical files on the live site); each is used once, on a
+ * different page.
+ *
+ * Design: white background (ivory/cream = #ffffff since 10 Nov 2026).
  */
 
 export const SITE = {
   name: "Kiggundu Art Studio",
   tagline: "Empowering Creativity: Nurturing Artistic Expression, Talent and Art Therapy.",
   description:
-    "Kiggundu Art Studio is a non-profit organization founded in 2021 whose role is to support the development of artistic talent & expression through Art by discovering, supporting and championing the growth of emerging artists; thus empowering communities through creativity.",
+    "A non-profit founded in 2021. We discover, support and champion emerging artists — and empower communities through creativity.",
   location: "Ndejje Kanyanya, Wakiso — minutes from Kampala, Uganda",
   shortLocation: "Kiggundu Art Studio, Kampala, Uganda",
   phone: "+256 703 652 348",
@@ -46,15 +54,15 @@ export const STATS = [
   { value: "2021", label: "Founded in Ndejje Kanyanya, Wakiso" },
   { value: "30+", label: "Artists & students supported" },
   { value: "4", label: "Countries of murals" },
-  { value: "11", label: "Resident artists in the 2026 Residency & Wellness Program" },
+  { value: "11", label: "Resident artists, 2026 Residency & Wellness Program" },
 ] as const;
 
 /* ---------------------------------- Home ---------------------------------- */
 
 export const OUR_STUDIO = {
   kicker: "Our Studio",
-  title: "A vibrant creative hub for emerging artists in Uganda",
-  text: "We are a vibrant creative hub for emerging artists in Uganda. Our studio is a safe place where artists can pour their hearts and ideas into their work without worrying about the nuts and bolts of being an artist.",
+  title: "A creative hub for emerging artists",
+  text: "A safe place for emerging artists to pour heart and ideas into the work — free from the business of being an artist.",
   image: "/images/open-studio-151.jpg",
   imageAlt: "Artists at work inside Kiggundu Art Studio",
 } as const;
@@ -63,15 +71,15 @@ export const OUR_STORY = {
   kicker: "Our Story",
   title: "Founded in 2021, built on purpose",
   paragraphs: [
-    "In 2021, Haggai Kiggundu and Doria Kimuli founded the studio. Since then, we have been able to give 8 artists a chance — and our goal remains the same: to help young artists to redefine what it means to be an Artist in Uganda.",
-    "We guide artists to discover purpose and build readiness for success, so that artists can tell a story, define their path and shape the future of Uganda's art industry.",
+    "Haggai Kiggundu and Doria Kimuli founded the studio in 2021. Since then, 8 artists have had their chance here — the goal is unchanged: help young artists redefine what it means to be an artist in Uganda.",
+    "We help artists find purpose and get ready for success — to tell their story, define their path, shape Uganda's art future.",
   ],
   image: "/images/metamorphosis-talk-94.jpg",
   imageAlt: "Artists in conversation during a Metamorphosis artist talk",
 } as const;
 
 export const MEET_ARTISTS_INTRO =
-  "We are committed to supporting the talent and professional growth of emerging Ugandan artists by taking them through a year-long apprentice program, offering skill-based grants and commissions, facilitating their involvement in exhibitions and events, and building professional networks for artists.";
+  "We support emerging Ugandan artists with a year-long apprentice program, skill-based grants and commissions, exhibitions and events, and a professional network.";
 
 export type Artist = {
   name: string;
@@ -125,7 +133,7 @@ export const PREVIOUS_ARTISTS: Artist[] = [
   {
     name: "Kabeya Ilunga",
     role: "Metamorphosis artist, 2024–2025",
-    blurb: "Congolese painter based in Kampala; Marketing and Communication Lead of the first edition.",
+    blurb: "Congolese painter in Kampala; Marketing and Communication Lead, first edition.",
   },
   {
     name: "Ruberanziza Oswald",
@@ -143,12 +151,6 @@ export const COLLABORATORS = [
 
 export const GALLERY_IMAGES = [
   {
-    src: "/images/hero-open-studio.jpg",
-    alt: "Artists in discussion inside the studio, beneath a textile portrait",
-    caption: "Inside the studio",
-    wide: true,
-  },
-  {
     src: "/images/metamorphosis-talk-121.jpg",
     alt: "Artist talk at the studio, portrait orientation",
     caption: "Metamorphosis artist talk",
@@ -161,10 +163,10 @@ export const GALLERY_IMAGES = [
     wide: false,
   },
   {
-    src: "/images/open-studio-151.jpg",
-    alt: "Open studio day at Kiggundu Art Studio",
-    caption: "Open studio",
-    wide: false,
+    src: "/images/chronicles-3673.jpg",
+    alt: "Chronicles of Existence exhibition at the studio",
+    caption: "Chronicles of Existence",
+    wide: true,
   },
   {
     src: "/images/iyara-whatsapp.jpg",
@@ -173,9 +175,51 @@ export const GALLERY_IMAGES = [
     wide: false,
   },
   {
-    src: "/images/chronicles-3673.jpg",
-    alt: "Chronicles of Existence exhibition at the studio",
-    caption: "Chronicles of Existence",
+    src: "/images/metamorphosis-talk-72.jpg",
+    alt: "Visitors looking at a framed portrait during an artist talk",
+    caption: "Visitors at the artist talk",
+    wide: false,
+  },
+  {
+    src: "/images/open-studio-7th-106.jpg",
+    alt: "Four artists posing together at the open studio",
+    caption: "Artists at the open studio",
+    wide: false,
+  },
+  {
+    src: "/images/pxl-135025-mp.jpg",
+    alt: "Artists sharing food and conversation around a table",
+    caption: "Sharing a meal at the studio",
+    wide: false,
+  },
+  {
+    src: "/images/metamorphosis-talk-94b.jpg",
+    alt: "Artists seated before a portrait and a denim textile on the wall",
+    caption: "Artist talk, works on the wall",
+    wide: true,
+  },
+  {
+    src: "/images/ayero-8734.jpg",
+    alt: "Ayero Daisy at Kiggundu Art Studio",
+    caption: "Ayero Daisy",
+    wide: false,
+  },
+  {
+    src: "/images/img-7494.jpg",
+    alt: "Two artists working together on a red board",
+    caption: "Artists at work",
+    wide: false,
+  },
+  {
+    src: "/images/pxl-121855-mp.jpg",
+    alt: "Artists in discussion around a table with a laptop and notebooks",
+    caption: "Learning together",
+    wide: true,
+  },
+  {
+    src: "/images/epeyonon-exhibition-1.jpg",
+    alt: "Visitors looking at large works at the Epeyonon exhibition",
+    caption: "Epeyonon exhibition opening",
     wide: true,
   },
 ] as const;
@@ -187,7 +231,7 @@ export const EXHIBITION = {
   dates: "20 June 2026, 2:00pm – 25 July 2026, 6:00pm",
   venue: "Kiggundu Art Studio, Kampala, Uganda",
   description:
-    "Edwin Ntare's debut solo exhibition at Kiggundu Art Studio, featuring a series of works off his new art collection exploring what existence means to him through the lens of denim, leather, cotton — a material culture he has invested his time nurturing.",
+    "Edwin Ntare's debut solo show: new works exploring what existence means to him, through denim, leather and cotton — materials he has spent years working with.",
   poster: "/images/chronicles-poster.jpg",
   posterAlt: "Poster for Chronicles of Existence, a solo show by Edwin Ntare",
   image: "/images/chronicles-3673.jpg",
@@ -201,33 +245,33 @@ export const PROGRAMS = [
     name: "Apprenticeship",
     tagline: "One year from raw talent to practice",
     description:
-      "A year-long apprentice program that takes emerging artists from raw talent to a working practice — skill-based grants, commissions, exhibitions and a professional network.",
-    image: "/images/metamorphosis-talk-121.jpg",
-    imageAlt: "Artist talk during the Metamorphosis apprenticeship",
+      "A year from raw talent to working practice — grants, commissions, exhibitions, a network.",
+    image: "/images/metamorphosis-talk-72.jpg",
+    imageAlt: "Visitors at a Metamorphosis artist talk",
   },
   {
     name: "Workshops",
     tagline: "Art for children, schools, neighbours",
     description:
-      "Hands-on workshops that open the studio to children, schools and neighbours — art as a shared, everyday language.",
-    image: "/images/open-studio-151.jpg",
-    imageAlt: "Workshop day at the open studio",
+      "Hands-on workshops for children, schools and neighbours — art as a shared, everyday language.",
+    image: "/images/pxl-121855-mp.jpg",
+    imageAlt: "Artists learning together around a table",
   },
   {
     name: "Murals",
     tagline: "Walls painted with the community",
     description:
-      "Large-scale murals painted with the community — the studio's public face, in four countries so far.",
-    image: "/images/metamorphosis-talk-94.jpg",
-    imageAlt: "Artists discussing a mural project",
+      "Large murals painted with the community — our public face, in four countries so far.",
+    image: "/images/metamorphosis-talk-94b.jpg",
+    imageAlt: "Artists seated before mural works on the wall",
   },
   {
     name: "FireSideChArts Africa",
     tagline: "Stories and conversation around the fire",
     description:
-      "Stories and conversation around the fire — an evening space where artists, elders and neighbours meet art, memory and community.",
-    image: "/images/hero-open-studio.jpg",
-    imageAlt: "Artists gathered in conversation at the studio",
+      "Stories and conversation around the fire — artists, elders and neighbours, art, memory and community.",
+    image: "/images/pxl-135025-mp.jpg",
+    imageAlt: "Artists sharing food and conversation around a table",
   },
 ] as const;
 
@@ -236,25 +280,33 @@ export const SERVICES = [
     name: "Murals on commission",
     description: "For schools, institutions, businesses.",
     detail:
-      "A wall, a story, a community. The studio designs and paints murals on commission, from first sketch to the finished wall.",
+      "A wall, a story, a community — designed and painted on commission, from first sketch to finished wall.",
+    image: "/images/metamorphosis-talk-94b.jpg",
+    imageAlt: "Mural works on the studio wall",
   },
   {
     name: "Art workshops",
     description: "For children, schools and groups.",
     detail:
-      "Practical, joyful workshops led by studio artists — for classrooms, youth groups and community gatherings.",
+      "Practical, joyful workshops led by studio artists — classrooms, youth groups, community gatherings.",
+    image: "/images/pxl-121855-mp.jpg",
+    imageAlt: "A workshop in progress at the studio",
   },
   {
     name: "Mentorship",
     description: "A year of practice and research.",
     detail:
-      "The Metamorphosis apprenticeship: a full year of mentorship, practice and research for emerging artists.",
+      "Metamorphosis: a full year of mentorship, practice and research for emerging artists.",
+    image: "/images/metamorphosis-talk-72.jpg",
+    imageAlt: "An artist talk at the studio",
   },
   {
     name: "Guided tours",
     description: "The studio, the shows, the artists.",
     detail:
-      "Walk the studio with an artist: the space, the current show and the people making the work.",
+      "Walk the studio with an artist — the space, the show, its makers.",
+    image: "/images/epeyonon-exhibition-1.jpg",
+    imageAlt: "Visitors looking at works in the gallery",
   },
 ] as const;
 
@@ -268,11 +320,13 @@ export const CAMPAIGN = {
   raisedUsd: null as number | null,
   title: "Help us raise $12,000",
   intro:
-    "Together, we can build a creative space that empowers artists and strengthens the heartbeat of Ugandan culture.",
+    "Together, let's build a creative space that empowers artists and strengthens Ugandan culture.",
   purpose:
-    "We are raising funds for our newly opened 2026 Residency & Wellness Program to cover stipends for all our 11 resident artists, art materials, wellness activities, and more.",
+    "For our new 2026 Residency & Wellness Program: stipends for 11 resident artists, materials, wellness, and more.",
   ctaLabel: "View campaign",
   ctaUrl: "https://kiggunduartstudio.org/donate/",
+  image: "/images/pxl-135025-mp.jpg",
+  imageAlt: "Artists sharing a meal together at the studio",
 } as const;
 
 export const DONATION_USES = [
@@ -318,11 +372,11 @@ export const POSTS: Post[] = [
     date: "June 15, 2026",
     category: "Exhibition",
     excerpt:
-      "A solo show by Edwin Ntare — Sat, 20 Jun | Kiggundu Art Studio. Edwin Ntare's debut solo exhibition at Kiggundu Art Studio, featuring a series of works off his new art collection exploring what existence means to him through the lens of denim, leather, cotton, a material culture he has invested his time nurturing.",
+      "Edwin Ntare's debut solo show — new works on what existence means, through denim, leather and cotton, materials he has spent years working with.",
     image: "/images/chronicles-poster.jpg",
     imageAlt: "Poster for Chronicles of Existence, a solo show by Edwin Ntare",
     body: [
-      "A solo show by Edwin Ntare — Sat, 20 Jun | Kiggundu Art Studio. Edwin Ntare's debut solo exhibition at Kiggundu Art Studio, featuring a series of works off his new art collection exploring what existence means to him through the lens of denim, leather, cotton, a material culture he has invested his time nurturing.",
+      "Edwin Ntare's debut solo show — new works on what existence means, through denim, leather and cotton, materials he has spent years working with.",
       "Exhibition: 20 June 2026, 2:00pm – 25 July 2026, 6:00pm, Kiggundu Art Studio, Kampala, Uganda.",
     ],
     originalUrl:
@@ -335,10 +389,12 @@ export const POSTS: Post[] = [
     author: "Kabeya Ilunga",
     category: "Learning",
     excerpt:
-      "In today's rapidly evolving educational landscape, the traditional model of rote memorization and passive learning is being challenged by quite many interesting and dynamic approaches…",
+      "Today, rote memorization and passive learning are giving way to dynamic new approaches…",
+    image: "/images/pxl-121855-mp.jpg",
+    imageAlt: "Artists learning together at the studio",
     body: [
-      "In today's rapidly evolving educational landscape, the traditional model of rote memorization and passive learning is being challenged by quite many interesting and dynamic approaches…",
-      "Photo: Kiggundu Rodney speaking to the students from Bankhill College Ndejje.",
+      "In today's rapidly evolving educational landscape, rote memorization and passive learning are being challenged by dynamic new approaches…",
+      "Photo: artists learning together at the studio.",
     ],
     originalUrl:
       "https://kiggunduartstudio.wordpress.com/2025/09/11/benefits-of-experiential-learning-to-learners-students/",
@@ -352,6 +408,8 @@ export const POSTS: Post[] = [
     category: "Community",
     excerpt:
       "As the month of September, also known as the Suicide Prevention Month, comes to a close, endeavour to ask yourself. What do you know about…",
+    image: "/images/pxl-135025-mp.jpg",
+    imageAlt: "Artists together at the studio",
     body: [
       "As the month of September, also known as the Suicide Prevention Month, comes to a close, endeavour to ask yourself. What do you know about…",
     ],
@@ -370,21 +428,21 @@ export const VIDEO = {
 export const INTERVIEWS = {
   title: "About the Apprentices Interviews",
   paragraphs: [
-    "These testimonial videos highlight the voices of our apprentices at Kiggundu Art Studio. Through their experiences, they share how the program has shaped their skills, inspired their creativity, and supported their growth as emerging artists.",
-    "The apprenticeship journey is best told by those who live it. In these videos, our apprentices open up about their challenges, discoveries, and dreams, showing how Kiggundu Art Studio has become a place where talent is nurtured and visions take shape.",
+    "Testimonial videos from our apprentices: how the program shaped their skills, inspired their creativity, and supported their growth.",
+    "The journey, told by those who live it — their challenges, discoveries and dreams, and how the studio nurtures talent and vision.",
   ],
   platforms: ["Podcast", "YouTube", "Apple Podcasts", "Instagram", "Facebook"],
 } as const;
 
 export const SUBSCRIBE = {
   title: "Subscribe for updates",
-  text: "Join our mailing list and get notified when we release new Events and blog posts. No spam, we guarantee.",
+  text: "Join the mailing list — news on Events and blog posts. No spam, guaranteed.",
 } as const;
 
 export const FOUNDER = {
   name: "Kiggundu Rodney Erismas",
   role: "Founder",
-  bio: "Visual artist, muralist and social entrepreneur. Makerere graduate whose patterned, vivid painting explores identity, mental health and social justice.",
+  bio: "Visual artist, muralist and social entrepreneur. Makerere graduate — patterned, vivid painting on identity, mental health and social justice.",
   points: [
     "Senior Atlantic Fellow, Global Brain Health Institute (UCSF)",
     "Founder of FireSideChArts Africa",
@@ -393,6 +451,18 @@ export const FOUNDER = {
   caption: "Mural painting is at the heart of the studio.",
   image: "/images/metamorphosis-talk-121.jpg",
   imageAlt: "Kiggundu Rodney Erismas at the studio",
+} as const;
+
+export const ABOUT_IMAGE = {
+  src: "/images/open-studio-7th-106.jpg",
+  alt: "Four artists posing together at the open studio",
+  caption: "Artists at the open studio",
+} as const;
+
+export const PRESS_IMAGE = {
+  src: "/images/epeyonon-exhibition-2.jpg",
+  alt: "Visitors looking at large works at an exhibition opening",
+  caption: "Visitors at an exhibition opening",
 } as const;
 
 export const PRESS_ITEMS = [
@@ -429,7 +499,7 @@ export const EVENTS: StudioEvent[] = [
     dates: "20 June 2026, 2:00pm – 25 July 2026, 6:00pm",
     venue: "Kiggundu Art Studio, Kampala, Uganda",
     description:
-      "Edwin Ntare's debut solo exhibition, exploring what existence means through denim, leather and cotton.",
+      "Debut solo show: what existence means, in denim, leather and cotton.",
     image: "/images/chronicles-poster.jpg",
     imageAlt: "Poster for Chronicles of Existence, a solo show by Edwin Ntare",
     link: "/blog/chronicles-of-existence",
@@ -442,7 +512,9 @@ export const EVENTS: StudioEvent[] = [
     dates: "Sat 1 August 2026 · 2pm – 8pm",
     venue: "Kiggundu Art Studio, Kampala, Uganda",
     description:
-      "A closing tour and artist talk to round off Chronicles of Existence — an open evening at the studio.",
+      "Closing tour and artist talk for Chronicles of Existence — an open evening.",
+    image: "/images/open-studio-7th-106.jpg",
+    imageAlt: "Artists posing together at the open studio",
     link: "/blog/chronicles-of-existence",
     linkLabel: "About the exhibition",
   },
@@ -454,6 +526,8 @@ export const EVENTS: StudioEvent[] = [
     venue: "Kiggundu Art Studio, Kampala, Uganda",
     description:
       "Artists, elders and carers — around art, stories and brain health, together.",
+    image: "/images/pxl-135025-mp.jpg",
+    imageAlt: "Artists sharing food and conversation around a table",
     link: "/programs",
     linkLabel: "See our programs",
   },

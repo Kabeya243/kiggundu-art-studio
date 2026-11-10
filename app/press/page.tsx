@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
-import { PRESS_ITEMS, SITE } from "@/lib/data";
+import { PRESS_IMAGE, PRESS_ITEMS, SITE } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Press",
@@ -26,7 +27,18 @@ export default function PressPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
-        <div className="grid gap-6 md:grid-cols-2">
+        <figure>
+          <Image
+            src={PRESS_IMAGE.src}
+            alt={PRESS_IMAGE.alt}
+            width={1600}
+            height={1067}
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            className="aspect-[16/9] w-full object-cover"
+          />
+          <figcaption className="mt-3 text-sm text-stone-warm">{PRESS_IMAGE.caption}</figcaption>
+        </figure>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {PRESS_ITEMS.map((item) => (
             <article key={item.title} className="border border-line bg-white p-8 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-clay">

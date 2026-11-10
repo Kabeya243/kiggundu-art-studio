@@ -26,9 +26,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
-              An independent art space where artists create, learn and meet
-              the community. Nurturing artists, shaping perspectives,
-              building community.
+              An independent art space where artists create, learn and meet.
+              Nurturing artists, shaping perspectives, building community.
             </p>
             <p className="mt-4 text-xs uppercase tracking-[0.22em] text-white/50">
               Independent art space · Est. 2021

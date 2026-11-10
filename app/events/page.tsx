@@ -20,8 +20,7 @@ export default function EventsPage() {
             What&apos;s on at the studio
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
-            Exhibitions, open evenings and regular gatherings — the studio is
-            open to artists, schools and neighbours.
+            Exhibitions, open evenings, regular gatherings — open to artists, schools and neighbours.
           </p>
         </div>
       </section>

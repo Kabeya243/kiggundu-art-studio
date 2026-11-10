@@ -87,8 +87,8 @@ export default async function BlogPostPage({
         <div className="mt-12 rounded-lg bg-cream p-6 sm:p-8">
           <p className="font-display text-xl font-medium">Continue reading</p>
           <p className="mt-2 text-base leading-relaxed text-ink-soft">
-            This article was first published on the studio&apos;s WordPress.
-            Read the full piece there:
+            First published on the studio&apos;s WordPress. Read the full
+            piece there:
           </p>
           <a
             href={post.originalUrl}
